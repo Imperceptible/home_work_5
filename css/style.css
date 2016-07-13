@@ -14,7 +14,7 @@
     background-image: url("../images/homework5.jpg");
     width: 1215px;
     height: 1029px;
-    margin: 0 auto;
+    margin: auto;
 
 }
 
@@ -22,7 +22,7 @@ header {
     width: 1215px;;
     height: 36px;
     background-color: rgba(73, 177, 255, 0.58);
-    margin: 0 auto;
+    margin: auto;
 }
 
 ul {
@@ -33,7 +33,7 @@ ul {
 li {
     display: block;
     float: left;
-    margin-top: 10px;
+    margin-top: 8px;
 }
 
 li a {
@@ -66,7 +66,7 @@ li a {
     color: #fff;
 }
 
-.form {
+.second {
     background-color: rgba(0, 0, 0, 0.7);
     height: 100%;
     width: 100%;
@@ -110,4 +110,41 @@ div.fb_block button:active {
 
 .fb_block span {
     font-weight: 700;
+}
+
+.ou {
+    text-align: center;
+}
+
+.forms {
+
+}
+
+.form_item {
+    padding: 8px 0;
+    width: 276px;
+    margin: auto;
+    font-size: 14px;
+    color: white;
+}
+
+.fild {
+    width: 100%;
+    height: 35px;
+    padding-left: 10px;
+    background-color: black;
+    color: white;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: solid 1px #494947;
+}
+
+.submit.input {
+    margin:  auto;
+}
+
+.text {
+    text-align: center;
+    font-size: 11px;
+    color: white;
 }
