@@ -112,8 +112,45 @@ div.fb_block button:active {
     font-weight: 700;
 }
 
+.trabl {
+    position: relative;
+    width: 275px;
+    height: 50px;
+    margin: 0 auto;
+}
+.left.top {
+    float: left;
+    width: 120px;
+    height: 24px;
+    border-bottom: solid 1px #666666;
+}
+
+.right.top {
+    float: right;
+    width: 120px;
+    height: 24px;
+    border-bottom: solid 1px #666666;
+}
+
+.left.bottom {
+    float: left;
+    width: 120px;
+
+    border-top:solid 1px black;
+}
+
+.right.bottom {
+    float: right;
+    width: 120px;
+
+    border-top:solid 1px black;
+}
+
 .ou {
-    text-align: center;
+    position: absolute;
+    margin: 16px 125px;
+    color: #999999;
+}
 }
 
 .forms {
@@ -141,6 +178,19 @@ div.fb_block button:active {
 
 .submit.input {
     margin:  auto;
+}
+
+.form_item.submit {
+    text-align: center;
+
+}
+
+.submit input {
+    background: linear-gradient(to bottom, #50aedb, #2e7ac4);
+    color: white;
+    width: 150px;
+    height: 35px;
+    border: none;
 }
 
 .text {
