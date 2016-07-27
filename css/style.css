@@ -16,22 +16,23 @@
 
 .backgroung {
     background-image: url("../images/homework5.jpg");
-    width: 1215px;
-    height: 1029px;
-    margin: auto;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
 }
 
-
-/*<------началась шапка------>*/
-
-
-
-
 header {
-    width: 1215px;;
+    width: 100%;
     height: 36px;
     background-color: rgb(8,91,159);
-    margin: auto;
+    text-align: center;
+}
+
+/*-----верхнее меню-----*/
+
+header > div {
+    display: inline-block;
 }
 
 .border {
@@ -43,8 +44,6 @@ header {
 .wrapper_right {
     float: right;
     margin-right: 25px;
-    /* border-right: solid 2px #56a2dc;
-     border-left: solid 2px #56a2dc;*/
 }
 
 .wrapper_right > div {
@@ -58,7 +57,7 @@ header {
 }
 
 .minhas {
-    background-image: url("../images/flag.gif");
+    background-image: url("../images/flag.png");
     background-size: 25px 27px;
     background-position: 15px center;
     background-repeat: no-repeat;
@@ -76,20 +75,13 @@ header {
     font-size: 14px;
 }
 
-/*.wrap {
-    box-sizing: border-box;
-}*/
-
 .wrap:hover {
-    background: linear-gradient(to bottom, #50aedb, #2e7ac4);
-
+    background: #4eabda;
 }
 
 .wrap:hover .decor {
     text-decoration: underline;
 }
-
-
 
 .wrapper_left {
     float: right;
@@ -110,25 +102,23 @@ header {
 }
 
 .topmenu a:hover {
-    background: linear-gradient(to bottom, #50aedb, #2e7ac4);
+    background: #4eabda;
     color: white;
 }
 
+/*<-------конец верхнего меню----------->*/
 
-
-/*<-------до сюдова шапка----------->*/
-
-
-
-
-
-.transparent {
-    margin: 0 auto;
+/*-----блок по центру-----*/
+/*--весь блок--*/
+main {
+    position: relative;
     width: 560px;
     height: 550px;
-    padding-top: 17.5%;
+    top: 50%;
+    left: 50%;
+    margin: -350px 0 0 -230px;
 }
-
+/*-----шапка центрального блока-----*/
 .cadastree {
     height: 62px;
     font-size: 24px;
@@ -142,48 +132,58 @@ header {
     color: #fff;
 }
 
+/*-----второй блок центра-----*/
 .second {
     background-color: rgba(0, 0, 0, 0.7);
     height: 100%;
     width: 100%;
 }
 
+    /*--начало кнопки FB--*/
 .fb_block {
-    padding-top: 35px;
+    position: relative;
+    height: 35px;
+    width: 277px;
+    margin: 0 auto;
+    top: 36px;
 }
 
-div.fb_block button {
-    padding-left: 45px;
+.fb_block{
+    cursor: pointer;
+}
+
+#fb {
     height: 35px;
     width: 276px;
-    margin: 0 auto;
-    background: none;
     border: none;
-    display: block;
     background-size: 35px 35px;
     background-position: left center;
     background-repeat: no-repeat;
     border-radius: 4px;
-    color: white;
-    font-size: 14px;
-    margin-bottom: 15px;
     border-top: 2px solid transparent;
 }
 
 #fb {
+
     border-color: #759cc3;
     background-color: #4a6ea9;
     background-image: url("../images/facebook-icon.png");
 }
 
-div.fb_block button:active {
-    background-color: #222;
-}
-
 .fb_block span {
     font-weight: 800;
 }
-
+#fb a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    display: block;
+    position: relative;
+    left: 60px;
+    top: 8px;
+    width: 200px;
+}
+/*--стрелка FB--*/
 .q {
     margin-left: 25px;
     display: inline-block;
@@ -193,19 +193,22 @@ div.fb_block button:active {
     border-right: solid 3px #ffffff;
     transform: rotate(45deg);
 }
-
+    /*--бордер после картинки F--*/
 .bord {
     border-right: groove 2px #335eb3;
     height: 35px;
     position: absolute;
-    margin-left: 178px;
+    left: 35px;
 }
+    /*---конец кнопки FB---*/
+
 
 .trabl {
     position: relative;
     width: 275px;
     height: 50px;
     margin: 0 auto;
+    margin-top: 40px;
 }
 .left.top {
     float: left;
@@ -291,12 +294,14 @@ div.fb_block button:active {
     border-radius: 4px;
 }
 
-.chk {
-
+.submit > input,
+.chk > input,
+.chk > label{
+    cursor: pointer;
 }
 
 .text {
-    margin-top: 10px;
+    margin-top: 15px;
     text-align: center;
     font-size: 11px;
     color: #ccc;

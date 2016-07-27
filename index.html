@@ -6,36 +6,35 @@
     <link rel="stylesheet" href="css/font_light.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
-<body>
-    <div class="all">
-        <header><!-- шляпка-->
-            <div class="wrapper_right">
-                <div class="border"></div>
-                <div class="wrap"><div class="ola"><a href="#"><span>Ola! <span class="decor">Entrar</span> ou <span class="decor">Cadastre-se</span></span></a></div></div>
-                <div class="wrap"><div class="minhas"><a href="#"><span class="decor">Minhas Ofertas</span></a></div></div>
-                <div class="border"></div>
+<body class="backgroung">
+    <header><!-- шляпка-->
+            <div>
+                <div class="wrapper_right">
+                    <div class="border"></div>
+                    <div class="wrap"><div class="ola"><a href="#"><span>Ola! <span class="decor">Entrar</span> ou <span class="decor">Cadastre-se</span></span></a></div></div>
+                    <div class="wrap"><div class="minhas"><a href="#"><span class="decor">Minhas Ofertas</span></a></div></div>
+                    <div class="border"></div>
+                </div>
+                <div class="wrapper_left">
+                    <ul>
+                        <li class="topmenu"><a href="#"><span>Ajuda</span></a></li>
+                        <li class="topmenu"><a href="#"><span>Contato</span></a></li>
+                        <li class="topmenu"><a href="#"><span>Forum</span></a></li>
+                        <li class="topmenu"><a href="#"><span>Vender</span></a></li>
+                        <li class="topmenu"><a href="#"><span>Meu YouBike</span></a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="wrapper_left">
-                <ul>
-                    <li class="topmenu"><a href="#"><span>Ajuda</span></a></li>
-                    <li class="topmenu"><a href="#"><span>Contato</span></a></li>
-                    <li class="topmenu"><a href="#"><span>Forum</span></a></li>
-                    <li class="topmenu"><a href="#"><span>Vender</span></a></li>
-                    <li class="topmenu"><a href="#"><span>Meu YouBike</span></a></li>
-                </ul>
-            </div>
-
-
         </header>
-        <div class="backgroung"><!--блок с великами-->
-            <div class="transparent"><!-- блок по центру экрана-->
+    <main><!--блок с великами-->
+            <!--<div class="transparent">&lt;!&ndash; блок по центру экрана&ndash;&gt;-->
                 <div class="cadastree"><!--шапка-->
                     <p>Cadastree-se</p>
                 </div>
                 <div class="second"><!--поля ввода-->
                     <div class="fb_block"><!--логин фейсбук-->
                         <div class="bord"></div>
-                        <form><button id="fb"><span>Log In</span> with <span>Facebook</span><span class="q"></span></button></form>
+                        <div id="fb"><a href="#"><span>Log In</span> with <span>Facebook</span><span class="q"></span></a></div>
                     </div>
                     <div class="trabl">
                         <div class="left top"></div>
@@ -44,22 +43,24 @@
                         <div class="left bottom"></div>
                         <div class="right bottom"></div>
                     </div>
-                    <div class="forms"><!--регистрация-->
+                    <form class="forms" method="get"><!--регистрация-->
                         <div class="form_item 1name"><input class="fild" placeholder="First name" type="text" name="first_name"></div>
                         <div class="form_item 2name"><input class="fild" placeholder="Last name" type="text" name="last_name"></div>
                         <div class="form_item email"><input class="fild" placeholder="Email Address" type="email" name="email"></div>
                         <div class="form_item pass"><input class="fild" placeholder="Choose Password" type="password" name="pass"></div>
                         <div class="form_item pass"><input class="fild" placeholder="Password Confirm" type="password" name="pass_confirm"></div>
-                        <div class="form_item chk"><input type="checkbox" name="check">  Send me Youbike updstes and tips</div>
+                        <div class="form_item chk">
+                            <input type="checkbox" id="chek" />
+                            <label for="chek">Send me Youbike updstes and tips</label>
+                        </div>
                         <div class="form_item submit"><input type="button" name="submit" value="Create my Account"></div>
                         <div class="text">
                             <p>By clicking the button above, you agree to the Terms of Service</p>
                             <p>Xiew our Privacy Policy</p>
                          </div>
-                    </div>
+                    </form>
                 </div>
-            </div>
-        </div>
-    </div>
+            <!--</div>-->
+    </main>
 </body>
 </html>
